@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: "oswald", sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.search{
+    display: flex;
+    width: 50%;
+    max-width: 60rem;
+}
+
+.search input{
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+search input:focus-visible{
+    outline: 1px solid purple;
+}
+
+.primary-btn{
+    background-color:purple;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.primary-btn:hover{
+    background: rgb(108, 31, 31);
+}
+
+.primary-btn:active{
+    background: rgb(98, 83, 83);
+}
+
+/* for cart */
+
+.profile-box{
+    box-shadow: 0 0 1rem rgba(0 , 0 , 0 , 0.1);
+    padding: 4rem 2rem;
+    width: 90%;
+    max-width: 78rem;
+    transition: 0.5s ease-in;
+}
+
+.profile-box:hover{
+    transform: rotate(-2deg) scale(1.05);
+    transition: 0.5s ease-in;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-section button{
+    align-self: center;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left h1{
+    font-size: 1.4rem;
+}
+
+.avatar{
+    height: 10rem;
+    width: 10rem;
+    /* border-radius: 50%; */
+    /* background-color: black; */
+}
+
+.avatar img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.about{
+    margin: 2rem;
+}
+
+.status{
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10px , 1fr));
+}
